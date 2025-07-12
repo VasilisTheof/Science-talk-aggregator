@@ -1,26 +1,34 @@
 [
   {
-    "date": "2025-07-15",
-    "time": "17:00",
-    "location": "ETH Zurich, HG G 60",
-    "title": "Advances in Quantum Computing",
-    "speaker": "Vasilis",
-    "info": "https://ethz.ch/events/quantum"
+    "date": "2025-07-18",
+    "time": "14:00",
+    "location": "ETZ/E/6",
+    "title": "Merge and Cooperate: how axons travel over long distances",
+    "speaker": "Dr. Catherine Villard",
+    "info": "https://ee.ethz.ch/news-and-events/events/details.merge-and-cooperate-how-axons-travel-over-long-distances.74899.html"
   },
   {
-    "date": "2025-07-18",
-    "time": "12:30",
-    "location": "EPFL, BC 410",
-    "title": "Neural Coding in the Brain",
-    "speaker": "Prof. Jean Dupont",
-    "info": "https://epfl.ch/events/neuroscience"
+    "date": "2025-07-25",
+    "time": "11:00",
+    "location": "ETZ/E/6",
+    "title": "NETRI : Innervate, screen, translate! Digitalizing human biology.",
+    "speaker": "Dr. Florian Larramendy",
+    "info": "https://ee.ethz.ch/news-and-events/events/details.netri-innervate-screen-translate-digitalizing-human-biology.74877.html"
   },
-    {
-    "date": "2025-07-18",
-    "time": "12:",
-    "location": "EPFL, BC 410",
-    "title": "Is this working",
-    "speaker": "Prof. test",
-    "info": "https://epfl.ch/events/neuroscience"
+  {
+    "date": "2025-07-25",
+    "time": "13:00",
+    "location": "ETZ/E/6",
+    "title": "Tracing the functional signature of human sleeping nociceptors in neuropathic pain",
+    "speaker": "Prof. Dr. Angelika Lampert",
+    "info": "https://ee.ethz.ch/news-and-events/events/details.tracing-the-functional-signature-of-human-sleeping-nociceptors-in-neuropathic-pain.74878.html"
+  },
+  {
+    "date": "2025-08-15",
+    "time": "11:00",
+    "location": "ETZ/E/6",
+    "title": "Mechanochromic sensors to new antibiotics: development of biotechnology based on self-assembled lipid structures",
+    "speaker": "Prof. Kaori Sugihara",
+    "info": "https://ee.ethz.ch/news-and-events/events/details.mechanochromic-sensors-to-new-antibiotics-development-of-biotechnology-based-on-selfassembled-lipid-structures.74405.html"
   }
 ]
