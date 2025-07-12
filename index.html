@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Swiss Scientific Talks</title>
   <style>
     body { font-family: Arial, sans-serif; max-width: 800px; margin: auto; padding: 1em; }
@@ -12,24 +12,44 @@
 </head>
 <body>
   <h1>Scientific Talks in Switzerland</h1>
+  <div id="events"></div>
 
-  <div class="date">July 15, 2025</div>
-  <div class="event">
-    <strong>Time:</strong> 17:00<br>
-    <strong>Location:</strong> ETH Zurich, HG G 60<br>
-    <strong>Title:</strong> Advances in Quantum Computing<br>
-    <strong>Speaker:</strong> Dr. Alice Müller<br>
-    <strong>More info:</strong> <a href="https://ethz.ch/events/quantum">ETH Event Page</a>
-  </div>
+  <script>
+    async function loadEvents() {
+      const res = await fetch('events.json');
+      const events = await res.json();
 
-  <div class="date">July 18, 2025</div>
-  <div class="event">
-    <strong>Time:</strong> 12:30<br>
-    <strong>Location:</strong> EPFL, BC 410<br>
-    <strong>Title:</strong> Neural Coding in the Brain<br>
-    <strong>Speaker:</strong> Prof. Jean Dupont<br>
-    <strong>More info:</strong> <a href="https://epfl.ch/events/neuroscience">EPFL Event Page</a>
-  </div>
+      const eventsDiv = document.getElementById('events');
 
+      // Group events by date
+      const grouped = events.reduce((acc, event) => {
+        acc[event.date] = acc[event.date] || [];
+        acc[event.date].push(event);
+        return acc;
+      }, {});
+
+      for (const date in grouped) {
+        const dateDiv = document.createElement('div');
+        dateDiv.className = 'date';
+        dateDiv.textContent = new Date(date).toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' });
+        eventsDiv.appendChild(dateDiv);
+
+        grouped[date].forEach(event => {
+          const eventDiv = document.createElement('div');
+          eventDiv.className = 'event';
+          eventDiv.innerHTML = `
+            <strong>Time:</strong> ${event.time}<br>
+            <strong>Location:</strong> ${event.location}<br>
+            <strong>Title:</strong> ${event.title}<br>
+            <strong>Speaker:</strong> ${event.speaker}<br>
+            <strong>More info:</strong> <a href="${event.info}" target="_blank">Event Page</a>
+          `;
+          eventsDiv.appendChild(eventDiv);
+        });
+      }
+    }
+
+    loadEvents();
+  </script>
 </body>
 </html>
