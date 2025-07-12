@@ -1,0 +1,18 @@
+[
+  {
+    "date": "2025-07-15",
+    "time": "17:00",
+    "location": "ETH Zurich, HG G 60",
+    "title": "Advances in Quantum Computing",
+    "speaker": "Dr. Alice Müller",
+    "info": "https://ethz.ch/events/quantum"
+  },
+  {
+    "date": "2025-07-18",
+    "time": "12:30",
+    "location": "EPFL, BC 410",
+    "title": "Neural Coding in the Brain",
+    "speaker": "Prof. Jean Dupont",
+    "info": "https://epfl.ch/events/neuroscience"
+  }
+]
