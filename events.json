@@ -15,4 +15,12 @@
     "speaker": "Prof. Jean Dupont",
     "info": "https://epfl.ch/events/neuroscience"
   }
+    {
+    "date": "2025-07-18",
+    "time": "12:",
+    "location": "EPFL, BC 410",
+    "title": "Is this working",
+    "speaker": "Prof. test",
+    "info": "https://epfl.ch/events/neuroscience"
+  }
 ]
