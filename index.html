@@ -16,7 +16,7 @@
 
   <script>
     async function loadEvents() {
-      const res = await fetch('events.json');
+      const res = await fetch('events.json?v=' + Date.now());
       const events = await res.json();
 
       const eventsDiv = document.getElementById('events');
