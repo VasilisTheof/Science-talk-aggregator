@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Swiss Scientific Talks</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 800px; margin: auto; padding: 1em; }
+    h1 { color: #006699; }
+    .event { border-bottom: 1px solid #ccc; margin-bottom: 1em; padding-bottom: 1em; }
+    .date { font-weight: bold; margin-top: 2em; }
+  </style>
+</head>
+<body>
+  <h1>Scientific Talks in Switzerland</h1>
+
+  <div class="date">July 15, 2025</div>
+  <div class="event">
+    <strong>Time:</strong> 17:00<br>
+    <strong>Location:</strong> ETH Zurich, HG G 60<br>
+    <strong>Title:</strong> Advances in Quantum Computing<br>
+    <strong>Speaker:</strong> Dr. Alice Müller<br>
+    <strong>More info:</strong> <a href="https://ethz.ch/events/quantum">ETH Event Page</a>
+  </div>
+
+  <div class="date">July 18, 2025</div>
+  <div class="event">
+    <strong>Time:</strong> 12:30<br>
+    <strong>Location:</strong> EPFL, BC 410<br>
+    <strong>Title:</strong> Neural Coding in the Brain<br>
+    <strong>Speaker:</strong> Prof. Jean Dupont<br>
+    <strong>More info:</strong> <a href="https://epfl.ch/events/neuroscience">EPFL Event Page</a>
+  </div>
+
+</body>
+</html>
